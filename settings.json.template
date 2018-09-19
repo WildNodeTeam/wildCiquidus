@@ -1,8 +1,3 @@
-/*
-  This file must be valid JSON. But comments are allowed
-
-  Please edit settings.json, not settings.json.template
-*/
 {
   // name your instance!
   "title": "WildNode Block Explorer",
@@ -120,7 +115,7 @@
   },
 
   // twitter, facebook, googleplus, bitcointalk, github, slack, website
-  "twitter": "suprnurd",
+  "twitter": "NodesWild",
   "facebook": "yourfacebookpage",
   "googleplus": "yourgooglepluspage",
   "bitcointalk": "yourbitcointalktopicvalue",
