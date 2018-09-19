@@ -5,15 +5,15 @@
 */
 {
   // name your instance!
-  "title": "CIQUIDUS",
+  "title": "WildNode Block Explorer",
 
-  "address": "127.0.0.1:3001",
+  "address": "explorer.wildnode.finance",
 
   // coin name
-  "coin": "Chaincoin",
+  "coin": "WildNode",
 
   // coin symbol
-  "symbol": "CHC",
+  "symbol": "WLD",
 
   // logo
   "logo": "/images/chain_dark-128x128.png",
@@ -26,14 +26,14 @@
   //     Cerulean, Cosmo, Cyborg, Darkly, Flatly, Journal, Lumen, Paper,
   //     Readable, Sandstone, Simplex, Slate, Spacelab, Superhero, United, Yeti
   // theme (see /public/themes for available themes)
-  "theme": "Slate",
+  "theme": "Flatly",
 
   // port to listen for requests on.
   "port" : 3001,
 
   // database settings (MongoDB)
   "dbsettings": {
-    "user": "ciquidus",
+    "user": "wildciquidus",
     "password": "3xp!0reR",
     "database": "explorerdb",
     "address": "localhost",
@@ -47,13 +47,13 @@
   // wallet settings
   "wallet": {
     "host": "localhost",
-    "port": 11995,
-    "user": "chaincoinrpc",
+    "port": 25050,
+    "user": "wildnodecoinrpc",
     "pass": "123gfjk3R3pCCVjHtbRde2s5kzdf233sa"
   },
 
   // confirmations
-  "confirmations": 40,
+  "confirmations": 50,
 
   // language settings
   "locale": "locale/en.json",
@@ -69,7 +69,7 @@
     "bitcointalk": false,
     "website": false,
     "slack": false,
-    "github": false,
+    "github": true,
     "search": true,
     "movement": true,
     "network": true
@@ -78,8 +78,8 @@
   // index page (valid options for difficulty are POW, POS or Hybrid)
   "index": {
     "show_hashrate": true,
-    "difficulty": "POW",
-    "last_txs": 100
+    "difficulty": "POS",
+    "last_txs": 200
   },
 
   // ensure links on API page are valid
@@ -94,9 +94,9 @@
   //supported markets: bittrex, poloniex, yobit, empoex, bleutrade, cryptopia, ccex, coinexchange
   //default market is loaded by default and determines last price in header
   "markets": {
-    "coin": "CHC",
+    "coin": "WLD",
     "exchange": "BTC",
-    "enabled": ["cryptopia"],
+    "enabled": ["poloniex"],
     "cryptopia_id": "2186",
     "ccex_key" : "Get-Your-Own-Key",
     "coinexchange_id": "18",
@@ -124,7 +124,7 @@
   "facebook": "yourfacebookpage",
   "googleplus": "yourgooglepluspage",
   "bitcointalk": "yourbitcointalktopicvalue",
-  "github": "yourgithubusername/yourgithubrepo",
+  "github": "WildNodeTeam/WildNodeCore",
   "slack": "yourfullslackinviteurl",
   "website": "yourfullwebsiteurl",
 
@@ -147,7 +147,7 @@
   // HEAVY: retreive from heavys getsupply api call
   // BALANCES : total of all address balances
   // TXOUTSET : retreive from gettxoutsetinfo api call
-  "supply": "TXOUTSET",
+  "supply": "GETINFO",
 
   // how to acquire network hashrate
   // getnetworkhashps: uses getnetworkhashps api call, returns in GH/s
@@ -156,7 +156,7 @@
 
   // nethash unitd: sets nethash API return units
   // valid options: "P" (PH/s), "T" (TH/s), "G" (GH/s), "M" (MH/s), "K" (KH/s)
-  "nethash_units": "G",
+  "nethash_units": "M",
 
   // Address labels
   // example : "CGTta3M4t3yXu8uRgkKvaWd2d8DQvDPnpL": {"label": "This is a burn address", "type":"danger", "url":"http://example.com"}
